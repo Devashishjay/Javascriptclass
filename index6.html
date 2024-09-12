@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in Js</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <!-- Inline event handling -->
+    <!-- Internal event handling       // highest prerioty internal js ka hoga -->
+    <!-- ye single click event hai aur internal h ek button bnaye hai usme ek baar click krne se 
+ console m button was clicked dikh rha hai,jitta baar click kr rhe hai mouse utte baar 
+ dikh rha hai,aur ek popup v bnaye hai wo v print ho k aa rha h mouse ko click krne 
+ pe Internalja was clicked aa rha  -->
+
+    <button id="Internaljs">Internaljs button</button>
+
+    <!-- ye double click event hai mouse ko 2 baar tab krne pe sb work kr rha hai -->
+
+    <button
+      ondblclick="console.log('button was clicked 2 times'); alert('Inline js is clicjked')"
+    >
+      Click me 2 times
+    </button>
+
+    <!-- ek div bnaye hai usko css m style v kiye hai our output m div wale box pe hover krne pe 
+    ,you are inside div print ho k aa rha hai -->
+
+    <div onmouseover="console.log('you are inside div')">this is a box</div>
+
+    <!-- aur ye inter div bnaye h id de k -->
+
+    <div id="internaljs">Internal div</div>
+
+    <button id="Eventobject">Eventobject button</button>
+    <button id="btn1">Event Listner button</button>
+    <button id="mode">change mode</button>
+
+    <script src="6th.js"></script>
+  </body>
+</html>
